@@ -1,1 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background Hijau Modern -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M0,0h108v108h-108z" />
+    <!-- Lingkaran Aksen -->
+    <path
+        android:fillColor="#059669"
+        android:pathData="M54,54m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0" />
+    <!-- Lembaran Uang Kertas Modern -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,36C26,32.69 28.69,30 32,30H76C79.31,30 82,32.69 82,36V72C82,75.31 79.31,78 76,78H32C28.69,78 26,75.31 26,72V36Z" />
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M31,35H77V73H31V35Z" />
+    <!-- Lingkaran Tengah Uang & Simbol Dollar/Uang -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <!-- Aksen Sudut Uang -->
+    <path
+        android:fillColor="#A7F3D0"
+        android:pathData="M35,39H43V43H35V39ZM65,39H73V43H65V39ZM35,65H43V69H35V65ZM65,65H73V69H65V65Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M53,46H55V48H57V50H53V53H57C58.1,53 59,53.9 59,55V58C59,59.1 58.1,60 57,60H55V62H53V60H50V58H55V55H51C49.9,55 49,54.1 49,53V50C49,48.9 49.9,48 51,48H53V46Z" />
+</vector>
 
