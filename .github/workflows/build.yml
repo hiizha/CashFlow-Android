@@ -1,6 +1,5 @@
 
-
-name: Build Android APK
+name: Build CashFlow Android APK
 
 on:
   workflow_dispatch:
@@ -14,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    name: Build CashFlow Android APK
+    name: Build Android APK
     runs-on: ubuntu-latest
 
     steps:
@@ -27,20 +26,18 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Gradle
+      - name: Setup Gradle 8.9
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
 
       - name: Check Android SDK
         run: |
           echo "ANDROID_HOME=$ANDROID_HOME"
-          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
           ls "$ANDROID_HOME"
 
-      - name: Grant Gradle Permission
-        run: chmod +x gradlew
-
-      - name: Build APK
-        run: ./gradlew assembleDebug --no-daemon
+      - name: Build CashFlow APK
+        run: gradle assembleDebug --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
